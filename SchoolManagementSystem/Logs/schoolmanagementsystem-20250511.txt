@@ -3122,3 +3122,1096 @@ RolesAuthorizationRequirement:User.IsInRole must be true for one of the followin
 2025-05-11T12:19:32.9429418-06:00 0HNCGN133T5EC:0000004D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
 2025-05-11T12:19:32.9433878-06:00 0HNCGN133T5EC:0000004D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 0.4602ms (74253ad3)
 2025-05-11T12:19:33.2306990-06:00 0HNCGN133T5EC:0000004B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 287.8739ms (74253ad3)
+2025-05-11T14:49:30.0946291-06:00  [INF] User profile is available. Using '"C:\Users\luis_\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2025-05-11T14:49:31.5225900-06:00  [INF] Executed DbCommand ("84"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-05-11T14:49:31.8472748-06:00  [INF] Executed DbCommand ("305"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2025-05-11T14:49:32.8798463-06:00  [INF] Executed DbCommand ("439"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:49:32.9708823-06:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:49:32.9778455-06:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:49:32.9831414-06:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:49:33.1669322-06:00  [INF] Executed DbCommand ("154"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T14:49:33.3325872-06:00  [INF] Executed DbCommand ("16"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T14:49:33.3371568-06:00  [INF] Executed DbCommand ("3"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T14:49:33.3399707-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T14:49:33.3449077-06:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T14:49:33.4237634-06:00  [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T14:49:33.4499560-06:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Subjects] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T14:49:33.4953007-06:00  [INF] Executed DbCommand ("37"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Courses] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T14:49:33.6751356-06:00  [INF] Executed DbCommand ("169"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Teachers] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T14:49:33.7227729-06:00  [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T14:49:34.1574339-06:00  [INF] Executed DbCommand ("432"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:49:34.1657976-06:00  [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:49:34.1677732-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:49:34.1694639-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:49:34.1710687-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:49:34.1732292-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:49:34.6169665-06:00  [INF] Now listening on: "https://localhost:7017" (d826f4b8)
+2025-05-11T14:49:34.6171671-06:00  [INF] Now listening on: "http://localhost:5013" (d826f4b8)
+2025-05-11T14:49:34.7169356-06:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-05-11T14:49:34.7178680-06:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-05-11T14:49:34.7179481-06:00  [INF] Content root path: "C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem" (cc26f24e)
+2025-05-11T14:49:36.0574350-06:00 0HNCGPLB684G5:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/""" - null null (d509f86a)
+2025-05-11T14:49:36.2991084-06:00 0HNCGPLB684G5:00000001 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-05-11T14:49:36.3287504-06:00 0HNCGPLB684G5:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T14:49:36.4796267-06:00 0HNCGPLB684G5:00000001 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. (4c53259e)
+2025-05-11T14:49:36.5402532-06:00 0HNCGPLB684G5:00000001 [INF] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T14:49:36.6795873-06:00 0HNCGPLB684G5:00000001 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T14:49:36.7068518-06:00 0HNCGPLB684G5:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-05-11T14:49:36.8800621-06:00 0HNCGPLB684G5:00000001 [INF] Executed ViewResult - view "Index" executed in 178.4247ms. (f66409e9)
+2025-05-11T14:49:36.8829568-06:00 0HNCGPLB684G5:00000001 [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 551.8337ms (afa2e885)
+2025-05-11T14:49:36.8836435-06:00 0HNCGPLB684G5:00000001 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T14:49:36.8968927-06:00 0HNCGPLB684G5:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/""" - 200 null "text/html; charset=utf-8" 841.6138ms (74253ad3)
+2025-05-11T14:49:37.2226678-06:00 0HNCGPLB684G5:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T14:49:37.2295290-06:00 0HNCGPLB684G5:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 6.6576ms (74253ad3)
+2025-05-11T14:49:37.3630345-06:00 0HNCGPLB684G5:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T14:49:37.4424787-06:00 0HNCGPLB684G5:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 79.4697ms (74253ad3)
+2025-05-11T14:49:41.8512246-06:00 0HNCGPLB684G6:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""" - null null (d509f86a)
+2025-05-11T14:49:41.8658899-06:00 0HNCGPLB684G6:00000001 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T14:49:41.8684908-06:00 0HNCGPLB684G6:00000001 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T14:49:41.8858186-06:00 0HNCGPLB684G6:00000001 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2025-05-11T14:49:42.0007541-06:00 0HNCGPLB684G6:00000001 [INF] Executed ViewResult - view "Login" executed in 116.8941ms. (f66409e9)
+2025-05-11T14:49:42.0012244-06:00 0HNCGPLB684G6:00000001 [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 132.6085ms (afa2e885)
+2025-05-11T14:49:42.0014250-06:00 0HNCGPLB684G6:00000001 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T14:49:42.0020478-06:00 0HNCGPLB684G6:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""" - 200 null "text/html; charset=utf-8" 150.8391ms (74253ad3)
+2025-05-11T14:49:42.1687486-06:00 0HNCGPLB684G6:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T14:49:42.1707549-06:00 0HNCGPLB684G6:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T14:49:42.1707025-06:00 0HNCGPLB684G6:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 1.8779ms (74253ad3)
+2025-05-11T14:49:42.1804312-06:00 0HNCGPLB684G6:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 9.5086ms (74253ad3)
+2025-05-11T14:49:45.1227438-06:00 0HNCGPLB684G6:00000007 [INF] Request starting "HTTP/2" "POST" "https"://"localhost:7017""""/Account/Login""" - "application/x-www-form-urlencoded" 248 (d509f86a)
+2025-05-11T14:49:45.1425033-06:00 0HNCGPLB684G6:00000007 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T14:49:45.1727012-06:00 0HNCGPLB684G6:00000007 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SchoolManagementSystem.Models.LoginViewModel)" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T14:49:45.4350988-06:00 0HNCGPLB684G6:00000007 [INF] Executed DbCommand ("9"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T14:49:45.4450759-06:00 0HNCGPLB684G6:00000007 [INF] AuthenticationScheme: "Cookies" signed in. (c66dd7e7)
+2025-05-11T14:49:45.4770982-06:00 0HNCGPLB684G6:00000007 [INF] Executed DbCommand ("11"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-05-11T14:49:45.5392401-06:00 0HNCGPLB684G6:00000007 [INF] Executed DbCommand ("14"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2025-05-11T14:49:45.5457153-06:00 0HNCGPLB684G6:00000007 [INF] Executing RedirectResult, redirecting to "/Dashboard/AdminDashboard". (d98d540e)
+2025-05-11T14:49:45.5461516-06:00 0HNCGPLB684G6:00000007 [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 373.2613ms (afa2e885)
+2025-05-11T14:49:45.5462931-06:00 0HNCGPLB684G6:00000007 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T14:49:45.5471335-06:00 0HNCGPLB684G6:00000007 [INF] Request finished "HTTP/2" "POST" "https"://"localhost:7017""""/Account/Login""" - 302 0 null 424.4114ms (74253ad3)
+2025-05-11T14:49:45.5772093-06:00 0HNCGPLB684G6:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Dashboard/AdminDashboard""" - null null (d509f86a)
+2025-05-11T14:49:45.5906669-06:00 0HNCGPLB684G6:00000009 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)" (92d7f7d3)
+2025-05-11T14:49:45.5975882-06:00 0HNCGPLB684G6:00000009 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2025-05-11T14:49:45.5979130-06:00 0HNCGPLB684G6:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Dashboard/AdminDashboard""" - 302 0 null 20.7958ms (74253ad3)
+2025-05-11T14:49:45.6193113-06:00 0HNCGPLB684G6:0000000B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - null null (d509f86a)
+2025-05-11T14:49:45.6231022-06:00 0HNCGPLB684G6:0000000B [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T14:49:45.6235076-06:00 0HNCGPLB684G6:0000000B [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T14:49:45.6259517-06:00 0HNCGPLB684G6:0000000B [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2025-05-11T14:49:45.6355047-06:00 0HNCGPLB684G6:0000000B [INF] Executed ViewResult - view "Login" executed in 9.6359ms. (f66409e9)
+2025-05-11T14:49:45.6357406-06:00 0HNCGPLB684G6:0000000B [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 12.0602ms (afa2e885)
+2025-05-11T14:49:45.6358217-06:00 0HNCGPLB684G6:0000000B [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T14:49:45.6362902-06:00 0HNCGPLB684G6:0000000B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - 200 null "text/html; charset=utf-8" 16.9491ms (74253ad3)
+2025-05-11T14:49:45.7079488-06:00 0HNCGPLB684G6:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T14:49:45.7079710-06:00 0HNCGPLB684G6:0000000D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T14:49:45.7088118-06:00 0HNCGPLB684G6:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 0.8906ms (74253ad3)
+2025-05-11T14:49:45.7154384-06:00 0HNCGPLB684G6:0000000D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 7.4669ms (74253ad3)
+2025-05-11T14:49:47.1181723-06:00 0HNCGPLB684G6:00000011 [INF] Request starting "HTTP/2" "POST" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - "application/x-www-form-urlencoded" 248 (d509f86a)
+2025-05-11T14:49:47.1225992-06:00 0HNCGPLB684G6:00000011 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T14:49:47.1228698-06:00 0HNCGPLB684G6:00000011 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SchoolManagementSystem.Models.LoginViewModel)" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T14:49:47.1424142-06:00 0HNCGPLB684G6:00000011 [INF] Executed DbCommand ("8"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T14:49:47.1477234-06:00 0HNCGPLB684G6:00000011 [INF] AuthenticationScheme: "Cookies" signed in. (c66dd7e7)
+2025-05-11T14:49:47.1568949-06:00 0HNCGPLB684G6:00000011 [INF] Executed DbCommand ("7"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-05-11T14:49:47.1689438-06:00 0HNCGPLB684G6:00000011 [INF] Executed DbCommand ("8"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2025-05-11T14:49:47.1700146-06:00 0HNCGPLB684G6:00000011 [INF] Executing RedirectResult, redirecting to "/Dashboard/AdminDashboard". (d98d540e)
+2025-05-11T14:49:47.1702329-06:00 0HNCGPLB684G6:00000011 [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 47.2466ms (afa2e885)
+2025-05-11T14:49:47.1703290-06:00 0HNCGPLB684G6:00000011 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T14:49:47.1708297-06:00 0HNCGPLB684G6:00000011 [INF] Request finished "HTTP/2" "POST" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - 302 0 null 52.6027ms (74253ad3)
+2025-05-11T14:49:48.6690485-06:00 0HNCGPLB684G6:00000013 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Dashboard/AdminDashboard""" - null null (d509f86a)
+2025-05-11T14:49:48.6867946-06:00 0HNCGPLB684G6:00000013 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)" (92d7f7d3)
+2025-05-11T14:49:48.6882775-06:00 0HNCGPLB684G6:00000013 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2025-05-11T14:49:48.6887863-06:00 0HNCGPLB684G6:00000013 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Dashboard/AdminDashboard""" - 302 0 null 20.0201ms (74253ad3)
+2025-05-11T14:49:48.7091057-06:00 0HNCGPLB684G6:00000015 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - null null (d509f86a)
+2025-05-11T14:49:48.7123400-06:00 0HNCGPLB684G6:00000015 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T14:49:48.7125820-06:00 0HNCGPLB684G6:00000015 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T14:49:48.7136353-06:00 0HNCGPLB684G6:00000015 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2025-05-11T14:49:48.7205840-06:00 0HNCGPLB684G6:00000015 [INF] Executed ViewResult - view "Login" executed in 6.9928ms. (f66409e9)
+2025-05-11T14:49:48.7207888-06:00 0HNCGPLB684G6:00000015 [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 8.1192ms (afa2e885)
+2025-05-11T14:49:48.7208648-06:00 0HNCGPLB684G6:00000015 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T14:49:48.7212563-06:00 0HNCGPLB684G6:00000015 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - 200 null "text/html; charset=utf-8" 12.1569ms (74253ad3)
+2025-05-11T14:49:48.8322831-06:00 0HNCGPLB684G6:00000017 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T14:49:48.8331254-06:00 0HNCGPLB684G6:00000019 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T14:49:48.8338977-06:00 0HNCGPLB684G6:00000019 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 0.6824ms (74253ad3)
+2025-05-11T14:49:48.8410604-06:00 0HNCGPLB684G6:00000017 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 8.7486ms (74253ad3)
+2025-05-11T14:49:50.1499269-06:00 0HNCGPLB684G6:0000001B [INF] Request starting "HTTP/2" "POST" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - "application/x-www-form-urlencoded" 248 (d509f86a)
+2025-05-11T14:49:50.1552381-06:00 0HNCGPLB684G6:0000001B [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T14:49:50.1554582-06:00 0HNCGPLB684G6:0000001B [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SchoolManagementSystem.Models.LoginViewModel)" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T14:49:50.1665298-06:00 0HNCGPLB684G6:0000001B [INF] Executed DbCommand ("6"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T14:49:50.1685818-06:00 0HNCGPLB684G6:0000001B [INF] AuthenticationScheme: "Cookies" signed in. (c66dd7e7)
+2025-05-11T14:49:50.1832943-06:00 0HNCGPLB684G6:0000001B [INF] Executed DbCommand ("13"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-05-11T14:49:50.1933456-06:00 0HNCGPLB684G6:0000001B [INF] Executed DbCommand ("7"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2025-05-11T14:49:50.1946541-06:00 0HNCGPLB684G6:0000001B [INF] Executing RedirectResult, redirecting to "/Dashboard/AdminDashboard". (d98d540e)
+2025-05-11T14:49:50.1949454-06:00 0HNCGPLB684G6:0000001B [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 39.4031ms (afa2e885)
+2025-05-11T14:49:50.1950403-06:00 0HNCGPLB684G6:0000001B [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T14:49:50.1954953-06:00 0HNCGPLB684G6:0000001B [INF] Request finished "HTTP/2" "POST" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - 302 0 null 45.5803ms (74253ad3)
+2025-05-11T14:49:50.2156004-06:00 0HNCGPLB684G6:0000001D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Dashboard/AdminDashboard""" - null null (d509f86a)
+2025-05-11T14:49:50.2205619-06:00 0HNCGPLB684G6:0000001D [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)" (92d7f7d3)
+2025-05-11T14:49:50.2210172-06:00 0HNCGPLB684G6:0000001D [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2025-05-11T14:49:50.2212921-06:00 0HNCGPLB684G6:0000001D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Dashboard/AdminDashboard""" - 302 0 null 5.6798ms (74253ad3)
+2025-05-11T14:49:51.4359493-06:00 0HNCGPLB684G6:0000001F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - null null (d509f86a)
+2025-05-11T14:49:51.4400671-06:00 0HNCGPLB684G6:0000001F [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T14:49:51.4402707-06:00 0HNCGPLB684G6:0000001F [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T14:49:51.4417267-06:00 0HNCGPLB684G6:0000001F [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2025-05-11T14:49:51.4459012-06:00 0HNCGPLB684G6:0000001F [INF] Executed ViewResult - view "Login" executed in 4.233ms. (f66409e9)
+2025-05-11T14:49:51.4460277-06:00 0HNCGPLB684G6:0000001F [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 5.6933ms (afa2e885)
+2025-05-11T14:49:51.4460865-06:00 0HNCGPLB684G6:0000001F [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T14:49:51.4467122-06:00 0HNCGPLB684G6:0000001F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - 200 null "text/html; charset=utf-8" 10.7136ms (74253ad3)
+2025-05-11T14:49:51.5211424-06:00 0HNCGPLB684G6:00000023 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T14:49:51.5211423-06:00 0HNCGPLB684G6:00000021 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T14:49:51.5218473-06:00 0HNCGPLB684G6:00000021 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 0.654ms (74253ad3)
+2025-05-11T14:49:51.5335701-06:00 0HNCGPLB684G6:00000023 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 12.391ms (74253ad3)
+2025-05-11T14:58:49.3299849-06:00  [INF] User profile is available. Using '"C:\Users\luis_\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2025-05-11T14:58:50.6533231-06:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-05-11T14:58:50.8145069-06:00  [INF] Executed DbCommand ("143"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2025-05-11T14:58:51.2088927-06:00  [INF] Executed DbCommand ("61"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:58:51.2972095-06:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:58:51.3005517-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:58:51.3033774-06:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:58:51.4104270-06:00  [INF] Executed DbCommand ("86"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T14:58:52.1423780-06:00  [INF] Executed DbCommand ("624"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T14:58:52.1490786-06:00  [INF] Executed DbCommand ("4"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T14:58:52.1528146-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T14:58:52.1568800-06:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T14:58:52.2297650-06:00  [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T14:58:52.2509563-06:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Subjects] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T14:58:52.2722218-06:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Courses] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T14:58:52.2931490-06:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Teachers] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T14:58:52.3151287-06:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T14:58:52.6250509-06:00  [INF] Executed DbCommand ("308"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:58:52.6394530-06:00  [INF] Executed DbCommand ("9"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:58:52.6416809-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:58:52.6435279-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:58:52.6448974-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:58:52.6472287-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T14:58:54.0754435-06:00  [INF] Now listening on: "https://localhost:7017" (d826f4b8)
+2025-05-11T14:58:54.0755763-06:00  [INF] Now listening on: "http://localhost:5013" (d826f4b8)
+2025-05-11T14:58:54.2146616-06:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-05-11T14:58:54.2155010-06:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-05-11T14:58:54.2156030-06:00  [INF] Content root path: "C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem" (cc26f24e)
+2025-05-11T14:58:55.8145159-06:00 0HNCGPQHV8LUP:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - null null (d509f86a)
+2025-05-11T14:58:55.9692397-06:00 0HNCGPQHV8LUP:00000001 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T14:58:55.9870560-06:00 0HNCGPQHV8LUP:00000001 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T14:58:56.0033550-06:00 0HNCGPQHV8LUP:00000001 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2025-05-11T14:58:56.1636158-06:00 0HNCGPQHV8LUP:00000001 [INF] Executed ViewResult - view "Login" executed in 160.1134ms. (f66409e9)
+2025-05-11T14:58:56.1662523-06:00 0HNCGPQHV8LUP:00000001 [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 178.1122ms (afa2e885)
+2025-05-11T14:58:56.1666719-06:00 0HNCGPQHV8LUP:00000001 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T14:58:56.1720515-06:00 0HNCGPQHV8LUP:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - 200 null "text/html; charset=utf-8" 359.4435ms (74253ad3)
+2025-05-11T14:58:56.5570943-06:00 0HNCGPQHV8LUP:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T14:58:56.5615703-06:00 0HNCGPQHV8LUP:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 4.1663ms (74253ad3)
+2025-05-11T14:58:56.6563916-06:00 0HNCGPQHV8LUP:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T14:58:56.6968903-06:00 0HNCGPQHV8LUP:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 40.4353ms (74253ad3)
+2025-05-11T14:59:05.9354543-06:00 0HNCGPQHV8LUQ:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - null null (d509f86a)
+2025-05-11T14:59:05.9486662-06:00 0HNCGPQHV8LUQ:00000001 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T14:59:05.9489796-06:00 0HNCGPQHV8LUQ:00000001 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T14:59:05.9715049-06:00 0HNCGPQHV8LUQ:00000001 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2025-05-11T14:59:05.9814574-06:00 0HNCGPQHV8LUQ:00000001 [INF] Executed ViewResult - view "Login" executed in 10.4107ms. (f66409e9)
+2025-05-11T14:59:05.9817393-06:00 0HNCGPQHV8LUQ:00000001 [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 32.6705ms (afa2e885)
+2025-05-11T14:59:05.9818302-06:00 0HNCGPQHV8LUQ:00000001 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T14:59:05.9824392-06:00 0HNCGPQHV8LUQ:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - 200 null "text/html; charset=utf-8" 46.9555ms (74253ad3)
+2025-05-11T14:59:06.0553925-06:00 0HNCGPQHV8LUQ:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T14:59:06.0553959-06:00 0HNCGPQHV8LUQ:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T14:59:06.0567846-06:00 0HNCGPQHV8LUQ:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 1.3775ms (74253ad3)
+2025-05-11T14:59:06.0704115-06:00 0HNCGPQHV8LUQ:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 14.8992ms (74253ad3)
+2025-05-11T15:00:38.6978268-06:00 0HNCGPQHV8LUR:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/""" - null null (d509f86a)
+2025-05-11T15:00:38.7188335-06:00 0HNCGPQHV8LUR:00000001 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-05-11T15:00:38.7295126-06:00 0HNCGPQHV8LUR:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T15:00:38.9842091-06:00 0HNCGPQHV8LUR:00000001 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. (4c53259e)
+2025-05-11T15:00:39.0999145-06:00 0HNCGPQHV8LUR:00000001 [INF] Executed DbCommand ("77"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:00:39.3583050-06:00 0HNCGPQHV8LUR:00000001 [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:00:39.3813744-06:00 0HNCGPQHV8LUR:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-05-11T15:00:39.4543510-06:00 0HNCGPQHV8LUR:00000001 [INF] Executed ViewResult - view "Index" executed in 74.5851ms. (f66409e9)
+2025-05-11T15:00:39.4547019-06:00 0HNCGPQHV8LUR:00000001 [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 725.0449ms (afa2e885)
+2025-05-11T15:00:39.4548671-06:00 0HNCGPQHV8LUR:00000001 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T15:00:39.4599554-06:00 0HNCGPQHV8LUR:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/""" - 200 null "text/html; charset=utf-8" 762.4784ms (74253ad3)
+2025-05-11T15:00:39.5583560-06:00 0HNCGPQHV8LUR:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T15:00:39.5589620-06:00 0HNCGPQHV8LUR:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 0.5738ms (74253ad3)
+2025-05-11T15:00:39.5659208-06:00 0HNCGPQHV8LUR:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T15:00:39.5750208-06:00 0HNCGPQHV8LUR:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 9.074ms (74253ad3)
+2025-05-11T15:03:06.6164567-06:00  [INF] User profile is available. Using '"C:\Users\luis_\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2025-05-11T15:03:07.8159197-06:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-05-11T15:03:07.9992172-06:00  [INF] Executed DbCommand ("164"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2025-05-11T15:03:08.4107428-06:00  [INF] Executed DbCommand ("40"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:03:08.4882980-06:00  [INF] Executed DbCommand ("9"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:03:08.4933919-06:00  [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:03:08.4956112-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:03:08.5236184-06:00  [INF] Executed DbCommand ("11"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T15:03:08.6207439-06:00  [INF] Executed DbCommand ("7"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T15:03:08.6236082-06:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T15:03:08.6262042-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T15:03:08.6278902-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T15:03:08.6576750-06:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T15:03:08.6731214-06:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Subjects] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T15:03:08.6835810-06:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Courses] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T15:03:08.6986637-06:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Teachers] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T15:03:08.7117325-06:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T15:03:08.7230972-06:00  [INF] Executed DbCommand ("9"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:03:08.7283609-06:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:03:08.7297365-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:03:08.7308784-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:03:08.7320440-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:03:08.7331679-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:03:09.0565018-06:00  [INF] Now listening on: "https://localhost:7017" (d826f4b8)
+2025-05-11T15:03:09.0565681-06:00  [INF] Now listening on: "http://localhost:5013" (d826f4b8)
+2025-05-11T15:03:09.1595013-06:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-05-11T15:03:09.1626122-06:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-05-11T15:03:09.1628282-06:00  [INF] Content root path: "C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem" (cc26f24e)
+2025-05-11T15:03:09.6218160-06:00 0HNCGPSTU64DI:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/""" - null null (d509f86a)
+2025-05-11T15:03:09.9806807-06:00 0HNCGPSTU64DI:00000001 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-05-11T15:03:09.9955869-06:00 0HNCGPSTU64DI:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T15:03:10.1066388-06:00 0HNCGPSTU64DI:00000001 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. (4c53259e)
+2025-05-11T15:03:11.4742907-06:00 0HNCGPSTU64DI:00000001 [INF] Executed DbCommand ("1,350"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:03:11.6223757-06:00 0HNCGPSTU64DI:00000001 [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:03:11.6405042-06:00 0HNCGPSTU64DI:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-05-11T15:03:11.7427804-06:00 0HNCGPSTU64DI:00000001 [INF] Executed ViewResult - view "Index" executed in 104.8802ms. (f66409e9)
+2025-05-11T15:03:11.7444278-06:00 0HNCGPSTU64DI:00000001 [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 1748.3681ms (afa2e885)
+2025-05-11T15:03:11.7447459-06:00 0HNCGPSTU64DI:00000001 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T15:03:11.7507297-06:00 0HNCGPSTU64DI:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/""" - 200 null "text/html; charset=utf-8" 2130.7557ms (74253ad3)
+2025-05-11T15:03:11.9124985-06:00 0HNCGPSTU64DI:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T15:03:11.9125772-06:00 0HNCGPSTU64DI:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T15:03:11.9216206-06:00 0HNCGPSTU64DI:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 8.4171ms (74253ad3)
+2025-05-11T15:03:11.9958682-06:00 0HNCGPSTU64DI:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 83.3128ms (74253ad3)
+2025-05-11T15:03:29.2392176-06:00 0HNCGPSTU64DJ:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/""" - null null (d509f86a)
+2025-05-11T15:03:29.2492706-06:00 0HNCGPSTU64DJ:00000001 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-05-11T15:03:29.2497650-06:00 0HNCGPSTU64DJ:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T15:03:29.4509721-06:00 0HNCGPSTU64DJ:00000001 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:03:29.4759368-06:00 0HNCGPSTU64DJ:00000001 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:03:29.4805951-06:00 0HNCGPSTU64DJ:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-05-11T15:03:29.4947259-06:00 0HNCGPSTU64DJ:00000001 [INF] Executed ViewResult - view "Index" executed in 14.4902ms. (f66409e9)
+2025-05-11T15:03:29.4950505-06:00 0HNCGPSTU64DJ:00000001 [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 245.1777ms (afa2e885)
+2025-05-11T15:03:29.4951677-06:00 0HNCGPSTU64DJ:00000001 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T15:03:29.4957484-06:00 0HNCGPSTU64DJ:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/""" - 200 null "text/html; charset=utf-8" 256.5825ms (74253ad3)
+2025-05-11T15:03:29.5759423-06:00 0HNCGPSTU64DJ:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T15:03:29.5799045-06:00 0HNCGPSTU64DJ:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T15:03:29.5820623-06:00 0HNCGPSTU64DJ:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 2.3228ms (74253ad3)
+2025-05-11T15:03:29.5995112-06:00 0HNCGPSTU64DJ:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 23.5508ms (74253ad3)
+2025-05-11T15:03:33.6819916-06:00 0HNCGPSTU64DK:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/""" - null null (d509f86a)
+2025-05-11T15:03:33.6957411-06:00 0HNCGPSTU64DK:00000001 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-05-11T15:03:33.6961206-06:00 0HNCGPSTU64DK:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T15:03:33.7364761-06:00 0HNCGPSTU64DK:00000001 [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:03:33.7625939-06:00 0HNCGPSTU64DK:00000001 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:03:33.7639698-06:00 0HNCGPSTU64DK:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-05-11T15:03:33.7686756-06:00 0HNCGPSTU64DK:00000001 [INF] Executed ViewResult - view "Index" executed in 4.7312ms. (f66409e9)
+2025-05-11T15:03:33.7689730-06:00 0HNCGPSTU64DK:00000001 [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 72.7141ms (afa2e885)
+2025-05-11T15:03:33.7690746-06:00 0HNCGPSTU64DK:00000001 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T15:03:33.7699220-06:00 0HNCGPSTU64DK:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/""" - 200 null "text/html; charset=utf-8" 87.8723ms (74253ad3)
+2025-05-11T15:03:33.8646339-06:00 0HNCGPSTU64DK:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/css/style-starter.css""?v=ouIp8-9RclautY3JShNKPEDUsZT6PTjXL0iQlPCEvUk" - null null (d509f86a)
+2025-05-11T15:03:33.8736475-06:00 0HNCGPSTU64DK:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/banner.png""" - null null (d509f86a)
+2025-05-11T15:03:33.8736475-06:00 0HNCGPSTU64DK:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/logo.png""" - null null (d509f86a)
+2025-05-11T15:03:33.8801807-06:00 0HNCGPSTU64DK:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/img1.jpg""" - null null (d509f86a)
+2025-05-11T15:03:33.8816221-06:00 0HNCGPSTU64DK:0000000B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/classrom.jpg""" - null null (d509f86a)
+2025-05-11T15:03:33.8816222-06:00 0HNCGPSTU64DK:0000000D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T15:03:33.8827275-06:00 0HNCGPSTU64DK:0000000D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 1.0827ms (74253ad3)
+2025-05-11T15:03:33.8827016-06:00 0HNCGPSTU64DK:00000011 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/testi1.jpg""" - null null (d509f86a)
+2025-05-11T15:03:33.8836005-06:00 0HNCGPSTU64DK:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/subjects.jpg""" - null null (d509f86a)
+2025-05-11T15:03:33.8848106-06:00 0HNCGPSTU64DK:00000013 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/testi2.jpg""" - null null (d509f86a)
+2025-05-11T15:03:33.8850607-06:00 0HNCGPSTU64DK:00000015 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/testi3.jpg""" - null null (d509f86a)
+2025-05-11T15:03:33.8885280-06:00 0HNCGPSTU64DK:00000017 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/blog2.jpg""" - null null (d509f86a)
+2025-05-11T15:03:33.8896148-06:00 0HNCGPSTU64DK:00000019 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/blog1.jpg""" - null null (d509f86a)
+2025-05-11T15:03:33.8903723-06:00 0HNCGPSTU64DK:0000001B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/blog3.jpg""" - null null (d509f86a)
+2025-05-11T15:03:33.8933247-06:00 0HNCGPSTU64DK:0000001D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T15:03:33.8973319-06:00 0HNCGPSTU64DK:00000009 [INF] Sending file. Request path: '"/images/img1.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\img1.jpg"' (27b0a520)
+2025-05-11T15:03:33.8973506-06:00 0HNCGPSTU64DK:00000011 [INF] Sending file. Request path: '"/images/testi1.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\testi1.jpg"' (27b0a520)
+2025-05-11T15:03:33.8973292-06:00 0HNCGPSTU64DK:00000015 [INF] Sending file. Request path: '"/images/testi3.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\testi3.jpg"' (27b0a520)
+2025-05-11T15:03:33.8973799-06:00 0HNCGPSTU64DK:00000013 [INF] Sending file. Request path: '"/images/testi2.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\testi2.jpg"' (27b0a520)
+2025-05-11T15:03:33.8977305-06:00 0HNCGPSTU64DK:00000013 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/testi2.jpg""" - 200 4971 "image/jpeg" 12.904ms (74253ad3)
+2025-05-11T15:03:33.8977344-06:00 0HNCGPSTU64DK:00000015 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/testi3.jpg""" - 200 8824 "image/jpeg" 12.5963ms (74253ad3)
+2025-05-11T15:03:33.8978758-06:00 0HNCGPSTU64DK:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/img1.jpg""" - 200 68923 "image/jpeg" 17.4977ms (74253ad3)
+2025-05-11T15:03:33.8982114-06:00 0HNCGPSTU64DK:00000011 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/testi1.jpg""" - 200 9009 "image/jpeg" 15.5174ms (74253ad3)
+2025-05-11T15:03:33.9032601-06:00 0HNCGPSTU64DK:00000019 [INF] Sending file. Request path: '"/images/blog1.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\blog1.jpg"' (27b0a520)
+2025-05-11T15:03:33.9032601-06:00 0HNCGPSTU64DK:0000001B [INF] Sending file. Request path: '"/images/blog3.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\blog3.jpg"' (27b0a520)
+2025-05-11T15:03:33.9033392-06:00 0HNCGPSTU64DK:00000007 [INF] Sending file. Request path: '"/images/banner.png"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\banner.png"' (27b0a520)
+2025-05-11T15:03:33.9035660-06:00 0HNCGPSTU64DK:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/banner.png""" - 200 298721 "image/png" 29.8762ms (74253ad3)
+2025-05-11T15:03:33.9035704-06:00 0HNCGPSTU64DK:00000019 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/blog1.jpg""" - 200 112084 "image/jpeg" 13.9306ms (74253ad3)
+2025-05-11T15:03:33.9035704-06:00 0HNCGPSTU64DK:0000001B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/blog3.jpg""" - 200 102344 "image/jpeg" 13.1475ms (74253ad3)
+2025-05-11T15:03:33.9043657-06:00 0HNCGPSTU64DK:00000003 [INF] Sending file. Request path: '"/css/style-starter.css"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\css\style-starter.css"' (27b0a520)
+2025-05-11T15:03:33.9044465-06:00 0HNCGPSTU64DK:00000017 [INF] Sending file. Request path: '"/images/blog2.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\blog2.jpg"' (27b0a520)
+2025-05-11T15:03:33.9045697-06:00 0HNCGPSTU64DK:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/css/style-starter.css""?v=ouIp8-9RclautY3JShNKPEDUsZT6PTjXL0iQlPCEvUk" - 200 342052 "text/css" 39.9428ms (74253ad3)
+2025-05-11T15:03:33.9045701-06:00 0HNCGPSTU64DK:00000017 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/blog2.jpg""" - 200 148403 "image/jpeg" 16.1268ms (74253ad3)
+2025-05-11T15:03:33.9077475-06:00 0HNCGPSTU64DK:0000000F [INF] Sending file. Request path: '"/images/subjects.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\subjects.jpg"' (27b0a520)
+2025-05-11T15:03:33.9079636-06:00 0HNCGPSTU64DK:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/subjects.jpg""" - 200 291817 "image/jpeg" 24.4396ms (74253ad3)
+2025-05-11T15:03:33.9079844-06:00 0HNCGPSTU64DK:0000001D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 14.6999ms (74253ad3)
+2025-05-11T15:03:33.9504019-06:00 0HNCGPSTU64DK:0000000B [INF] Sending file. Request path: '"/images/classrom.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\classrom.jpg"' (27b0a520)
+2025-05-11T15:03:33.9510845-06:00 0HNCGPSTU64DK:0000000B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/classrom.jpg""" - 200 1173281 "image/jpeg" 69.2577ms (74253ad3)
+2025-05-11T15:03:33.9846926-06:00 0HNCGPSTU64DK:00000005 [INF] Sending file. Request path: '"/images/logo.png"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\logo.png"' (27b0a520)
+2025-05-11T15:03:33.9851103-06:00 0HNCGPSTU64DK:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/logo.png""" - 200 3257368 "image/png" 111.3702ms (74253ad3)
+2025-05-11T15:03:35.2189443-06:00 0HNCGPSTU64DK:0000001F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/banner.jpg""" - null null (d509f86a)
+2025-05-11T15:03:35.2249212-06:00 0HNCGPSTU64DK:0000001F [INF] Sending file. Request path: '"/images/banner.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\banner.jpg"' (27b0a520)
+2025-05-11T15:03:35.2258449-06:00 0HNCGPSTU64DK:0000001F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/banner.jpg""" - 200 275540 "image/jpeg" 6.6763ms (74253ad3)
+2025-05-11T15:03:35.2267252-06:00 0HNCGPSTU64DK:00000021 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/bg1.jpg""" - null null (d509f86a)
+2025-05-11T15:03:35.2296883-06:00 0HNCGPSTU64DK:00000021 [INF] Sending file. Request path: '"/images/bg1.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\bg1.jpg"' (27b0a520)
+2025-05-11T15:03:35.2301814-06:00 0HNCGPSTU64DK:00000021 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/bg1.jpg""" - 200 77268 "image/jpeg" 3.2941ms (74253ad3)
+2025-05-11T15:03:35.2339659-06:00 0HNCGPSTU64DK:00000023 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/bg2.jpg""" - null null (d509f86a)
+2025-05-11T15:03:35.2386449-06:00 0HNCGPSTU64DK:00000025 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/bg3.jpg""" - null null (d509f86a)
+2025-05-11T15:03:35.2400275-06:00 0HNCGPSTU64DK:00000023 [INF] Sending file. Request path: '"/images/bg2.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\bg2.jpg"' (27b0a520)
+2025-05-11T15:03:35.2402845-06:00 0HNCGPSTU64DK:00000023 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/bg2.jpg""" - 200 210875 "image/jpeg" 6.3356ms (74253ad3)
+2025-05-11T15:03:35.2433968-06:00 0HNCGPSTU64DK:00000025 [INF] Sending file. Request path: '"/images/bg3.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\bg3.jpg"' (27b0a520)
+2025-05-11T15:03:35.2438073-06:00 0HNCGPSTU64DK:00000025 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/bg3.jpg""" - 200 276916 "image/jpeg" 5.084ms (74253ad3)
+2025-05-11T15:03:35.2511100-06:00 0HNCGPSTU64DK:00000029 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/webfonts/fa-regular-400.woff2""" - null null (d509f86a)
+2025-05-11T15:03:35.2511194-06:00 0HNCGPSTU64DK:00000027 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/webfonts/fa-solid-900.woff2""" - null null (d509f86a)
+2025-05-11T15:03:35.2562780-06:00 0HNCGPSTU64DK:00000029 [INF] Sending file. Request path: '"/webfonts/fa-regular-400.woff2"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\webfonts\fa-regular-400.woff2"' (27b0a520)
+2025-05-11T15:03:35.2573575-06:00 0HNCGPSTU64DK:00000027 [INF] Sending file. Request path: '"/webfonts/fa-solid-900.woff2"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\webfonts\fa-solid-900.woff2"' (27b0a520)
+2025-05-11T15:03:35.2575446-06:00 0HNCGPSTU64DK:00000029 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/webfonts/fa-regular-400.woff2""" - 200 13588 "font/woff2" 5.925ms (74253ad3)
+2025-05-11T15:03:35.2575845-06:00 0HNCGPSTU64DK:00000027 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/webfonts/fa-solid-900.woff2""" - 200 80252 "font/woff2" 6.5666ms (74253ad3)
+2025-05-11T15:03:41.0455101-06:00 0HNCGPSTU64DK:0000002B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/favicon.ico""" - null null (d509f86a)
+2025-05-11T15:03:41.0475393-06:00 0HNCGPSTU64DK:0000002B [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\favicon.ico"' (27b0a520)
+2025-05-11T15:03:41.0477832-06:00 0HNCGPSTU64DK:0000002B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/favicon.ico""" - 200 5430 "image/x-icon" 2.2411ms (74253ad3)
+2025-05-11T15:03:45.4565574-06:00 0HNCGPSTU64DL:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/""" - null null (d509f86a)
+2025-05-11T15:03:45.4630106-06:00 0HNCGPSTU64DL:00000001 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-05-11T15:03:45.4634280-06:00 0HNCGPSTU64DL:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T15:03:45.4895411-06:00 0HNCGPSTU64DL:00000001 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:03:45.5145839-06:00 0HNCGPSTU64DL:00000001 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:03:45.5158003-06:00 0HNCGPSTU64DL:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-05-11T15:03:45.5207841-06:00 0HNCGPSTU64DL:00000001 [INF] Executed ViewResult - view "Index" executed in 4.962ms. (f66409e9)
+2025-05-11T15:03:45.5210974-06:00 0HNCGPSTU64DL:00000001 [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 57.4798ms (afa2e885)
+2025-05-11T15:03:45.5212930-06:00 0HNCGPSTU64DL:00000001 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T15:03:45.5226704-06:00 0HNCGPSTU64DL:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/""" - 200 null "text/html; charset=utf-8" 66.094ms (74253ad3)
+2025-05-11T15:03:45.6227596-06:00 0HNCGPSTU64DL:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/css/style-starter.css""?v=ouIp8-9RclautY3JShNKPEDUsZT6PTjXL0iQlPCEvUk" - null null (d509f86a)
+2025-05-11T15:03:45.6300512-06:00 0HNCGPSTU64DL:00000003 [INF] Sending file. Request path: '"/css/style-starter.css"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\css\style-starter.css"' (27b0a520)
+2025-05-11T15:03:45.6302970-06:00 0HNCGPSTU64DL:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/css/style-starter.css""?v=ouIp8-9RclautY3JShNKPEDUsZT6PTjXL0iQlPCEvUk" - 200 342052 "text/css" 7.7119ms (74253ad3)
+2025-05-11T15:03:45.6309836-06:00 0HNCGPSTU64DL:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/logo.png""" - null null (d509f86a)
+2025-05-11T15:03:45.6323947-06:00 0HNCGPSTU64DL:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/banner.png""" - null null (d509f86a)
+2025-05-11T15:03:45.6347125-06:00 0HNCGPSTU64DL:0000000B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/classrom.jpg""" - null null (d509f86a)
+2025-05-11T15:03:45.6347127-06:00 0HNCGPSTU64DL:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/img1.jpg""" - null null (d509f86a)
+2025-05-11T15:03:45.6347124-06:00 0HNCGPSTU64DL:0000000D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T15:03:45.6353009-06:00 0HNCGPSTU64DL:0000000D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 0.4796ms (74253ad3)
+2025-05-11T15:03:45.6366200-06:00 0HNCGPSTU64DL:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/subjects.jpg""" - null null (d509f86a)
+2025-05-11T15:03:45.6368158-06:00 0HNCGPSTU64DL:00000009 [INF] Sending file. Request path: '"/images/img1.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\img1.jpg"' (27b0a520)
+2025-05-11T15:03:45.6369371-06:00 0HNCGPSTU64DL:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/img1.jpg""" - 200 68923 "image/jpeg" 2.2233ms (74253ad3)
+2025-05-11T15:03:45.6371238-06:00 0HNCGPSTU64DL:00000011 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/testi1.jpg""" - null null (d509f86a)
+2025-05-11T15:03:45.6372012-06:00 0HNCGPSTU64DL:00000013 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/testi2.jpg""" - null null (d509f86a)
+2025-05-11T15:03:45.6381572-06:00 0HNCGPSTU64DL:00000015 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/testi3.jpg""" - null null (d509f86a)
+2025-05-11T15:03:45.6431738-06:00 0HNCGPSTU64DL:00000019 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/blog1.jpg""" - null null (d509f86a)
+2025-05-11T15:03:45.6431613-06:00 0HNCGPSTU64DL:00000017 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/blog2.jpg""" - null null (d509f86a)
+2025-05-11T15:03:45.6437050-06:00 0HNCGPSTU64DL:0000001B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/blog3.jpg""" - null null (d509f86a)
+2025-05-11T15:03:45.6450371-06:00 0HNCGPSTU64DL:0000001D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T15:03:45.6501923-06:00 0HNCGPSTU64DL:00000011 [INF] Sending file. Request path: '"/images/testi1.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\testi1.jpg"' (27b0a520)
+2025-05-11T15:03:45.6501923-06:00 0HNCGPSTU64DL:00000013 [INF] Sending file. Request path: '"/images/testi2.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\testi2.jpg"' (27b0a520)
+2025-05-11T15:03:45.6503917-06:00 0HNCGPSTU64DL:00000015 [INF] Sending file. Request path: '"/images/testi3.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\testi3.jpg"' (27b0a520)
+2025-05-11T15:03:45.6506221-06:00 0HNCGPSTU64DL:00000013 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/testi2.jpg""" - 200 4971 "image/jpeg" 13.3117ms (74253ad3)
+2025-05-11T15:03:45.6506221-06:00 0HNCGPSTU64DL:00000011 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/testi1.jpg""" - 200 9009 "image/jpeg" 13.3716ms (74253ad3)
+2025-05-11T15:03:45.6510087-06:00 0HNCGPSTU64DL:00000015 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/testi3.jpg""" - 200 8824 "image/jpeg" 12.4309ms (74253ad3)
+2025-05-11T15:03:45.6523869-06:00 0HNCGPSTU64DL:00000007 [INF] Sending file. Request path: '"/images/banner.png"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\banner.png"' (27b0a520)
+2025-05-11T15:03:45.6527055-06:00 0HNCGPSTU64DL:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/banner.png""" - 200 298721 "image/png" 20.236ms (74253ad3)
+2025-05-11T15:03:45.6531794-06:00 0HNCGPSTU64DL:0000001B [INF] Sending file. Request path: '"/images/blog3.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\blog3.jpg"' (27b0a520)
+2025-05-11T15:03:45.6533220-06:00 0HNCGPSTU64DL:0000001B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/blog3.jpg""" - 200 102344 "image/jpeg" 9.6016ms (74253ad3)
+2025-05-11T15:03:45.6564871-06:00 0HNCGPSTU64DL:00000019 [INF] Sending file. Request path: '"/images/blog1.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\blog1.jpg"' (27b0a520)
+2025-05-11T15:03:45.6566875-06:00 0HNCGPSTU64DL:00000019 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/blog1.jpg""" - 200 112084 "image/jpeg" 13.4803ms (74253ad3)
+2025-05-11T15:03:45.6625543-06:00 0HNCGPSTU64DL:00000017 [INF] Sending file. Request path: '"/images/blog2.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\blog2.jpg"' (27b0a520)
+2025-05-11T15:03:45.6632943-06:00 0HNCGPSTU64DL:00000017 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/blog2.jpg""" - 200 148403 "image/jpeg" 19.8054ms (74253ad3)
+2025-05-11T15:03:45.6637668-06:00 0HNCGPSTU64DL:0000001D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 18.7205ms (74253ad3)
+2025-05-11T15:03:45.6642817-06:00 0HNCGPSTU64DL:0000000F [INF] Sending file. Request path: '"/images/subjects.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\subjects.jpg"' (27b0a520)
+2025-05-11T15:03:45.6643924-06:00 0HNCGPSTU64DL:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/subjects.jpg""" - 200 291817 "image/jpeg" 27.7962ms (74253ad3)
+2025-05-11T15:03:45.7133411-06:00 0HNCGPSTU64DL:0000000B [INF] Sending file. Request path: '"/images/classrom.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\classrom.jpg"' (27b0a520)
+2025-05-11T15:03:45.7135806-06:00 0HNCGPSTU64DL:0000000B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/classrom.jpg""" - 200 1173281 "image/jpeg" 78.8305ms (74253ad3)
+2025-05-11T15:03:45.7764221-06:00 0HNCGPSTU64DL:00000005 [INF] Sending file. Request path: '"/images/logo.png"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\logo.png"' (27b0a520)
+2025-05-11T15:03:45.7766459-06:00 0HNCGPSTU64DL:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/logo.png""" - 200 3257368 "image/png" 145.619ms (74253ad3)
+2025-05-11T15:03:45.7936389-06:00 0HNCGPSTU64DL:0000001F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/banner.jpg""" - null null (d509f86a)
+2025-05-11T15:03:45.7977856-06:00 0HNCGPSTU64DL:0000001F [INF] Sending file. Request path: '"/images/banner.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\banner.jpg"' (27b0a520)
+2025-05-11T15:03:45.7980992-06:00 0HNCGPSTU64DL:0000001F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/banner.jpg""" - 200 275540 "image/jpeg" 4.404ms (74253ad3)
+2025-05-11T15:03:45.7998895-06:00 0HNCGPSTU64DL:00000021 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/bg1.jpg""" - null null (d509f86a)
+2025-05-11T15:03:45.8028092-06:00 0HNCGPSTU64DL:00000021 [INF] Sending file. Request path: '"/images/bg1.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\bg1.jpg"' (27b0a520)
+2025-05-11T15:03:45.8032394-06:00 0HNCGPSTU64DL:00000021 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/bg1.jpg""" - 200 77268 "image/jpeg" 3.1776ms (74253ad3)
+2025-05-11T15:03:45.8052806-06:00 0HNCGPSTU64DL:00000023 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/bg2.jpg""" - null null (d509f86a)
+2025-05-11T15:03:45.8052805-06:00 0HNCGPSTU64DL:00000025 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/images/bg3.jpg""" - null null (d509f86a)
+2025-05-11T15:03:45.8096822-06:00 0HNCGPSTU64DL:00000023 [INF] Sending file. Request path: '"/images/bg2.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\bg2.jpg"' (27b0a520)
+2025-05-11T15:03:45.8100734-06:00 0HNCGPSTU64DL:00000023 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/bg2.jpg""" - 200 210875 "image/jpeg" 4.7353ms (74253ad3)
+2025-05-11T15:03:45.8100503-06:00 0HNCGPSTU64DL:00000025 [INF] Sending file. Request path: '"/images/bg3.jpg"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\images\bg3.jpg"' (27b0a520)
+2025-05-11T15:03:45.8101826-06:00 0HNCGPSTU64DL:00000025 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/images/bg3.jpg""" - 200 276916 "image/jpeg" 4.9562ms (74253ad3)
+2025-05-11T15:03:45.8127466-06:00 0HNCGPSTU64DL:00000027 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/webfonts/fa-solid-900.woff2""" - null null (d509f86a)
+2025-05-11T15:03:45.8137669-06:00 0HNCGPSTU64DL:00000029 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/webfonts/fa-regular-400.woff2""" - null null (d509f86a)
+2025-05-11T15:03:45.8150958-06:00 0HNCGPSTU64DL:00000029 [INF] Sending file. Request path: '"/webfonts/fa-regular-400.woff2"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\webfonts\fa-regular-400.woff2"' (27b0a520)
+2025-05-11T15:03:45.8150832-06:00 0HNCGPSTU64DL:00000027 [INF] Sending file. Request path: '"/webfonts/fa-solid-900.woff2"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\webfonts\fa-solid-900.woff2"' (27b0a520)
+2025-05-11T15:03:45.8152885-06:00 0HNCGPSTU64DL:00000027 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/webfonts/fa-solid-900.woff2""" - 200 80252 "font/woff2" 2.5055ms (74253ad3)
+2025-05-11T15:03:45.8152925-06:00 0HNCGPSTU64DL:00000029 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/webfonts/fa-regular-400.woff2""" - 200 13588 "font/woff2" 1.4882ms (74253ad3)
+2025-05-11T15:03:50.2227451-06:00 0HNCGPSTU64DL:0000002B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/favicon.ico""" - null null (d509f86a)
+2025-05-11T15:03:50.2251735-06:00 0HNCGPSTU64DL:0000002B [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\wwwroot\favicon.ico"' (27b0a520)
+2025-05-11T15:03:50.2257437-06:00 0HNCGPSTU64DL:0000002B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/favicon.ico""" - 200 5430 "image/x-icon" 2.8155ms (74253ad3)
+2025-05-11T15:05:46.8902837-06:00  [INF] User profile is available. Using '"C:\Users\luis_\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2025-05-11T15:05:49.8145520-06:00  [INF] Executed DbCommand ("132"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-05-11T15:05:50.0573211-06:00  [INF] Executed DbCommand ("211"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2025-05-11T15:05:50.3893961-06:00  [INF] Executed DbCommand ("62"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:05:50.4683863-06:00  [INF] Executed DbCommand ("15"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:05:50.4712364-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:05:50.4733045-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:05:50.4960442-06:00  [INF] Executed DbCommand ("14"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T15:05:50.5474080-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T15:05:50.5491019-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T15:05:50.5513545-06:00  [INF] Executed DbCommand ("0"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T15:05:50.5526848-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T15:05:50.5740790-06:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T15:05:50.5812116-06:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Subjects] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T15:05:50.5901384-06:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Courses] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T15:05:50.5963458-06:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Teachers] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T15:05:50.6042723-06:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-05-11T15:05:50.6061585-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:05:50.6083256-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:05:50.6096247-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:05:50.6106287-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:05:50.6115323-06:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:05:50.6124354-06:00  [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-05-11T15:05:50.9422245-06:00  [INF] Now listening on: "https://localhost:7017" (d826f4b8)
+2025-05-11T15:05:50.9423877-06:00  [INF] Now listening on: "http://localhost:5013" (d826f4b8)
+2025-05-11T15:05:51.0093966-06:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-05-11T15:05:51.0100343-06:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-05-11T15:05:51.0103265-06:00  [INF] Content root path: "C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem" (cc26f24e)
+2025-05-11T15:05:52.2061912-06:00 0HNCGPUE6DAKB:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/""" - null null (d509f86a)
+2025-05-11T15:05:52.3253569-06:00 0HNCGPUE6DAKB:00000001 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-05-11T15:05:52.3408518-06:00 0HNCGPUE6DAKB:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T15:05:52.4844843-06:00 0HNCGPUE6DAKB:00000001 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. (4c53259e)
+2025-05-11T15:05:52.5404941-06:00 0HNCGPUE6DAKB:00000001 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:05:52.6875404-06:00 0HNCGPUE6DAKB:00000001 [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:05:52.7127325-06:00 0HNCGPUE6DAKB:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-05-11T15:05:52.8311863-06:00 0HNCGPUE6DAKB:00000001 [INF] Executed ViewResult - view "Index" executed in 121.8108ms. (f66409e9)
+2025-05-11T15:05:52.8342102-06:00 0HNCGPUE6DAKB:00000001 [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 492.7386ms (afa2e885)
+2025-05-11T15:05:52.8345761-06:00 0HNCGPUE6DAKB:00000001 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T15:05:52.8421113-06:00 0HNCGPUE6DAKB:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/""" - 200 null "text/html; charset=utf-8" 637.664ms (74253ad3)
+2025-05-11T15:05:53.1142554-06:00 0HNCGPUE6DAKB:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T15:05:53.1197986-06:00 0HNCGPUE6DAKB:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 5.4573ms (74253ad3)
+2025-05-11T15:05:53.1210722-06:00 0HNCGPUE6DAKB:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T15:05:53.1743669-06:00 0HNCGPUE6DAKB:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 53.1976ms (74253ad3)
+2025-05-11T15:06:17.8113148-06:00 0HNCGPUE6DAKC:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""" - null null (d509f86a)
+2025-05-11T15:06:17.8273209-06:00 0HNCGPUE6DAKC:00000001 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T15:06:17.8296159-06:00 0HNCGPUE6DAKC:00000001 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T15:06:17.8440238-06:00 0HNCGPUE6DAKC:00000001 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2025-05-11T15:06:17.9379394-06:00 0HNCGPUE6DAKC:00000001 [INF] Executed ViewResult - view "Login" executed in 95.7834ms. (f66409e9)
+2025-05-11T15:06:17.9386664-06:00 0HNCGPUE6DAKC:00000001 [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 108.7687ms (afa2e885)
+2025-05-11T15:06:17.9391783-06:00 0HNCGPUE6DAKC:00000001 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T15:06:17.9408462-06:00 0HNCGPUE6DAKC:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""" - 200 null "text/html; charset=utf-8" 129.3143ms (74253ad3)
+2025-05-11T15:06:18.0119616-06:00 0HNCGPUE6DAKC:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T15:06:18.0130102-06:00 0HNCGPUE6DAKC:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 1.041ms (74253ad3)
+2025-05-11T15:06:18.0133671-06:00 0HNCGPUE6DAKC:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T15:06:18.0279844-06:00 0HNCGPUE6DAKC:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 14.5375ms (74253ad3)
+2025-05-11T15:06:20.2436916-06:00 0HNCGPUE6DAKC:00000007 [INF] Request starting "HTTP/2" "POST" "https"://"localhost:7017""""/Account/Login""" - "application/x-www-form-urlencoded" 248 (d509f86a)
+2025-05-11T15:06:20.2617288-06:00 0HNCGPUE6DAKC:00000007 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T15:06:20.2898691-06:00 0HNCGPUE6DAKC:00000007 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SchoolManagementSystem.Models.LoginViewModel)" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T15:06:20.7553787-06:00 0HNCGPUE6DAKC:00000007 [INF] Executed DbCommand ("8"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T15:06:20.7613039-06:00 0HNCGPUE6DAKC:00000007 [INF] AuthenticationScheme: "Cookies" signed in. (c66dd7e7)
+2025-05-11T15:06:20.8577403-06:00 0HNCGPUE6DAKC:00000007 [INF] Executed DbCommand ("30"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-05-11T15:06:21.0583009-06:00 0HNCGPUE6DAKC:00000007 [INF] Executed DbCommand ("90"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2025-05-11T15:06:21.0626800-06:00 0HNCGPUE6DAKC:00000007 [INF] Executing RedirectResult, redirecting to "/Dashboard/AdminDashboard". (d98d540e)
+2025-05-11T15:06:21.0629332-06:00 0HNCGPUE6DAKC:00000007 [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 772.8859ms (afa2e885)
+2025-05-11T15:06:21.0629864-06:00 0HNCGPUE6DAKC:00000007 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T15:06:21.0634363-06:00 0HNCGPUE6DAKC:00000007 [INF] Request finished "HTTP/2" "POST" "https"://"localhost:7017""""/Account/Login""" - 302 0 null 819.6975ms (74253ad3)
+2025-05-11T15:06:21.5502901-06:00 0HNCGPUE6DAKC:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Dashboard/AdminDashboard""" - null null (d509f86a)
+2025-05-11T15:06:21.5792866-06:00 0HNCGPUE6DAKC:00000009 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)" (92d7f7d3)
+2025-05-11T15:06:21.5861068-06:00 0HNCGPUE6DAKC:00000009 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2025-05-11T15:06:21.5863777-06:00 0HNCGPUE6DAKC:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Dashboard/AdminDashboard""" - 302 0 null 36.0972ms (74253ad3)
+2025-05-11T15:06:21.6042168-06:00 0HNCGPUE6DAKC:0000000B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - null null (d509f86a)
+2025-05-11T15:06:21.6068430-06:00 0HNCGPUE6DAKC:0000000B [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T15:06:21.6070650-06:00 0HNCGPUE6DAKC:0000000B [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T15:06:21.6084457-06:00 0HNCGPUE6DAKC:0000000B [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2025-05-11T15:06:21.6151426-06:00 0HNCGPUE6DAKC:0000000B [INF] Executed ViewResult - view "Login" executed in 6.7707ms. (f66409e9)
+2025-05-11T15:06:21.6152774-06:00 0HNCGPUE6DAKC:0000000B [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 8.0766ms (afa2e885)
+2025-05-11T15:06:21.6153559-06:00 0HNCGPUE6DAKC:0000000B [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T15:06:21.6156065-06:00 0HNCGPUE6DAKC:0000000B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - 200 null "text/html; charset=utf-8" 11.4019ms (74253ad3)
+2025-05-11T15:06:22.1055614-06:00 0HNCGPUE6DAKC:0000000D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T15:06:22.1068935-06:00 0HNCGPUE6DAKC:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T15:06:22.1081992-06:00 0HNCGPUE6DAKC:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 1.1836ms (74253ad3)
+2025-05-11T15:06:22.1237626-06:00 0HNCGPUE6DAKC:0000000D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 18.1934ms (74253ad3)
+2025-05-11T15:06:26.2377313-06:00 0HNCGPUE6DAKC:00000011 [INF] Request starting "HTTP/2" "POST" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - "application/x-www-form-urlencoded" 248 (d509f86a)
+2025-05-11T15:06:26.2401370-06:00 0HNCGPUE6DAKC:00000011 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T15:06:26.2412595-06:00 0HNCGPUE6DAKC:00000011 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SchoolManagementSystem.Models.LoginViewModel)" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T15:06:26.2627853-06:00 0HNCGPUE6DAKC:00000011 [INF] Executed DbCommand ("7"ms) [Parameters=["@__email_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0" (0723d8ff)
+2025-05-11T15:06:26.2680316-06:00 0HNCGPUE6DAKC:00000011 [INF] AuthenticationScheme: "Cookies" signed in. (c66dd7e7)
+2025-05-11T15:06:26.2749088-06:00 0HNCGPUE6DAKC:00000011 [INF] Executed DbCommand ("6"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-05-11T15:06:26.2885996-06:00 0HNCGPUE6DAKC:00000011 [INF] Executed DbCommand ("9"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2025-05-11T15:06:26.2895782-06:00 0HNCGPUE6DAKC:00000011 [INF] Executing RedirectResult, redirecting to "/Dashboard/AdminDashboard". (d98d540e)
+2025-05-11T15:06:26.2898195-06:00 0HNCGPUE6DAKC:00000011 [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 48.4728ms (afa2e885)
+2025-05-11T15:06:26.2898799-06:00 0HNCGPUE6DAKC:00000011 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T15:06:26.2905329-06:00 0HNCGPUE6DAKC:00000011 [INF] Request finished "HTTP/2" "POST" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - 302 0 null 52.5844ms (74253ad3)
+2025-05-11T15:06:26.3146829-06:00 0HNCGPUE6DAKC:00000013 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Dashboard/AdminDashboard""" - null null (d509f86a)
+2025-05-11T15:06:26.3262658-06:00 0HNCGPUE6DAKC:00000013 [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)" (92d7f7d3)
+2025-05-11T15:06:26.3271713-06:00 0HNCGPUE6DAKC:00000013 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2025-05-11T15:06:26.3275435-06:00 0HNCGPUE6DAKC:00000013 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Dashboard/AdminDashboard""" - 302 0 null 12.819ms (74253ad3)
+2025-05-11T15:06:26.3466732-06:00 0HNCGPUE6DAKC:00000015 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - null null (d509f86a)
+2025-05-11T15:06:26.3492784-06:00 0HNCGPUE6DAKC:00000015 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (500cc934)
+2025-05-11T15:06:26.3494819-06:00 0HNCGPUE6DAKC:00000015 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login()" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T15:06:26.3503002-06:00 0HNCGPUE6DAKC:00000015 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2025-05-11T15:06:26.3555419-06:00 0HNCGPUE6DAKC:00000015 [INF] Executed ViewResult - view "Login" executed in 5.265ms. (f66409e9)
+2025-05-11T15:06:26.3556971-06:00 0HNCGPUE6DAKC:00000015 [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)" in 6.1211ms (afa2e885)
+2025-05-11T15:06:26.3558002-06:00 0HNCGPUE6DAKC:00000015 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.Login (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T15:06:26.3560585-06:00 0HNCGPUE6DAKC:00000015 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/Account/Login""?ReturnUrl=%2FDashboard%2FAdminDashboard" - 200 null "text/html; charset=utf-8" 9.4125ms (74253ad3)
+2025-05-11T15:06:26.4087246-06:00 0HNCGPUE6DAKC:00000017 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T15:06:26.4116298-06:00 0HNCGPUE6DAKC:00000019 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T15:06:26.4123078-06:00 0HNCGPUE6DAKC:00000019 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 0.622ms (74253ad3)
+2025-05-11T15:06:26.4145634-06:00 0HNCGPUE6DAKC:00000017 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 5.7823ms (74253ad3)
+2025-05-11T15:07:28.0304620-06:00 0HNCGPUE6DAKD:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/""" - null null (d509f86a)
+2025-05-11T15:07:28.0373683-06:00 0HNCGPUE6DAKD:00000001 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-05-11T15:07:28.0375011-06:00 0HNCGPUE6DAKD:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-05-11T15:07:28.0600290-06:00 0HNCGPUE6DAKD:00000001 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:07:28.0812262-06:00 0HNCGPUE6DAKD:00000001 [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-05-11T15:07:28.0824132-06:00 0HNCGPUE6DAKD:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-05-11T15:07:28.0879491-06:00 0HNCGPUE6DAKD:00000001 [INF] Executed ViewResult - view "Index" executed in 5.6169ms. (f66409e9)
+2025-05-11T15:07:28.0881756-06:00 0HNCGPUE6DAKD:00000001 [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 50.5915ms (afa2e885)
+2025-05-11T15:07:28.0882459-06:00 0HNCGPUE6DAKD:00000001 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-05-11T15:07:28.0886553-06:00 0HNCGPUE6DAKD:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/""" - 200 null "text/html; charset=utf-8" 58.2526ms (74253ad3)
+2025-05-11T15:07:28.1621983-06:00 0HNCGPUE6DAKD:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-05-11T15:07:28.1625601-06:00 0HNCGPUE6DAKD:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 0.3917ms (74253ad3)
+2025-05-11T15:07:28.1664458-06:00 0HNCGPUE6DAKD:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - null null (d509f86a)
+2025-05-11T15:07:28.1736100-06:00 0HNCGPUE6DAKD:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7017""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 7.002ms (74253ad3)

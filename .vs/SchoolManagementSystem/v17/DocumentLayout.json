@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\luis_\\documents\\github\\sistema_colegio\\proyecto_sistemacolegio\\schoolmanagementsystem\\views\\shared\\_layoutaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\views\\shared\\_layoutaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\luis_\\documents\\github\\sistema_colegio\\proyecto_sistemacolegio\\schoolmanagementsystem\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\luis_\\documents\\github\\sistema_colegio\\proyecto_sistemacolegio\\schoolmanagementsystem\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\luis_\\documents\\github\\sistema_colegio\\proyecto_sistemacolegio\\schoolmanagementsystem\\views\\shared\\_dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\views\\shared\\_dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\luis_\\documents\\github\\sistema_colegio\\proyecto_sistemacolegio\\schoolmanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\luis_\\documents\\github\\sistema_colegio\\proyecto_sistemacolegio\\schoolmanagementsystem\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\luis_\\documents\\github\\sistema_colegio\\proyecto_sistemacolegio\\schoolmanagementsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{392863DC-C8B7-4385-9C21-3398DBAB34D4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -71,6 +95,84 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "_LayoutAccount.cshtml",
+              "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Views\\Shared\\_LayoutAccount.cshtml",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Views\\Shared\\_LayoutAccount.cshtml",
+              "ToolTip": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Views\\Shared\\_LayoutAccount.cshtml",
+              "RelativeToolTip": "SchoolManagementSystem\\Views\\Shared\\_LayoutAccount.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T21:05:31.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "SchoolManagementSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T21:05:28.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Navbar.cshtml",
+              "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Views\\Shared\\_Navbar.cshtml",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Views\\Shared\\_Navbar.cshtml",
+              "ToolTip": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Views\\Shared\\_Navbar.cshtml*",
+              "RelativeToolTip": "SchoolManagementSystem\\Views\\Shared\\_Navbar.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T21:05:17.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Views\\Shared\\_Dashboard.cshtml",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Views\\Shared\\_Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Views\\Shared\\_Dashboard.cshtml*",
+              "RelativeToolTip": "SchoolManagementSystem\\Views\\Shared\\_Dashboard.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T21:05:07.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SchoolManagementSystem\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAGkBAAAAAAAAAAAkwHoBAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T20:55:53.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Footer.cshtml",
+              "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Views\\Shared\\_Footer.cshtml",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Views\\Shared\\_Footer.cshtml",
+              "ToolTip": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Views\\Shared\\_Footer.cshtml",
+              "RelativeToolTip": "SchoolManagementSystem\\Views\\Shared\\_Footer.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T20:54:00.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Controllers\\AccountController.cs",
@@ -83,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "SchoolDbContext.cs",
               "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Data\\SchoolDbContext.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Data\\SchoolDbContext.cs",
@@ -95,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "TeacherSchoolClass.cs",
               "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Data\\Entities\\TeacherSchoolClass.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Data\\Entities\\TeacherSchoolClass.cs",
@@ -107,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "TeacherSubject.cs",
               "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Data\\Entities\\TeacherSubject.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Data\\Entities\\TeacherSubject.cs",
@@ -119,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "CourseSubject.cs",
               "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Data\\Entities\\CourseSubject.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Data\\Entities\\CourseSubject.cs",
@@ -131,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "SeedDb.cs",
               "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Data\\SeedDb.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Data\\SeedDb.cs",
@@ -143,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Controllers\\DashboardController.cs",
@@ -155,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Program.cs",
@@ -167,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "IUserHelper.cs",
               "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Helpers\\IUserHelper.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Helpers\\IUserHelper.cs",
@@ -179,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "UserHelper.cs",
               "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Helpers\\UserHelper.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Helpers\\UserHelper.cs",
@@ -191,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Models\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Models\\LoginViewModel.cs",
@@ -203,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Data\\Entities\\Employee.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Data\\Entities\\Employee.cs",
@@ -215,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\luis_\\Documents\\GitHub\\Sistema_Colegio\\Proyecto_SistemaColegio\\SchoolManagementSystem\\Data\\Entities\\User.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Data\\Entities\\User.cs",
