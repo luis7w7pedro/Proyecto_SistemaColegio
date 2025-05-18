@@ -16,7 +16,10 @@ namespace SchoolManagementSystem.Helpers
         Task<SignInResult> LoginWithClaimsAsync(string email, string password, HttpContext httpContext);
 
         // Logs out the current user.
-        Task LogoutAsync();
+        //Task LogoutAsync();
+
+        // Logs out the current user with HttpContext.
+        Task LogoutAsync(HttpContext httpContext);
 
         // Updates an existing user.
         Task<IdentityResult> UpdateUserAsync(User user);

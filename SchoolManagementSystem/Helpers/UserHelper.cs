@@ -41,10 +41,12 @@ namespace SchoolManagementSystem.Helpers
             _context = context; // Inicializa _context
         }
 
-
         public async Task<IdentityResult> AddUserAsync(User user, string password)
         {
-            return await _userManager.CreateAsync(user, password);
+            user.Password = password;
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+            return IdentityResult.Success;
         }
 
         public async Task AddUserToRoleAsync(User user, string roleName)
@@ -54,7 +56,13 @@ namespace SchoolManagementSystem.Helpers
 
         public async Task<IdentityResult> ChangePasswordAsync(User user, string oldPassword, string newPassword)
         {
-            return await _userManager.ChangePasswordAsync(user, oldPassword, newPassword);
+            if (user.Password != oldPassword)
+                return IdentityResult.Failed(new IdentityError { Description = "La contraseña actual es incorrecta." });
+
+            user.Password = newPassword;
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+            return IdentityResult.Success;
         }
 
         public async Task CheckRoleAsync(string roleName)
@@ -103,38 +111,53 @@ namespace SchoolManagementSystem.Helpers
 
         public async Task<SignInResult> LoginWithClaimsAsync(string email, string password, HttpContext httpContext)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+            var user = await _userManager.FindByEmailAsync(email);
             if (user == null || user.Password != password)
             {
-                return SignInResult.Failed; // Devuelve un resultado fallido si las credenciales no son válidas
+                return SignInResult.Failed;
             }
 
-            // Crear los claims del usuario
+            var roles = await _userManager.GetRolesAsync(user);
+            var role = roles.FirstOrDefault() ?? "User";
+
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, user.FullName),
+                new Claim(ClaimTypes.Name, user.Email),
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Role, "Admin") // O podrías obtener el rol dinámicamente
+                new Claim(ClaimTypes.Role, role)
             };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
-            await httpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+            await httpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
                 new ClaimsPrincipal(claimsIdentity));
 
-            return SignInResult.Success; // Devuelve un resultado exitoso
+            return SignInResult.Success;
         }
 
-
-        public async Task LogoutAsync()
+        public async Task LogoutAsync(HttpContext httpContext)
         {
             await _signInManager.SignOutAsync();
+            await httpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
         }
 
         public async Task<IdentityResult> ResetPasswordAsync(User user, string token, string password)
         {
-            return await _userManager.ResetPasswordAsync(user, token, password);
+            // El token se ignora en este flujo de texto plano
+            user.Password = password;
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+            return IdentityResult.Success;
+        }
+
+        public async Task<IdentityResult> ResetPasswordWithoutTokenAsync(User user, string password)
+        {
+            user.Password = password;
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+            return IdentityResult.Success;
         }
 
         public async Task<IdentityResult> UpdateUserAsync(User user)
@@ -142,12 +165,16 @@ namespace SchoolManagementSystem.Helpers
             return await _userManager.UpdateAsync(user);
         }
 
+        public bool ValidatePassword(User user, string password)
+        {
+            return user.Password == password;
+        }
+
         public async Task<SignInResult> ValidatePasswordAsync(User user, string password)
         {
-            return await _signInManager.CheckPasswordSignInAsync(
-                user,
-                password,
-                false);
+            if (user.Password == password)
+                return SignInResult.Success;
+            return SignInResult.Failed;
         }
 
         public async Task RemoveUserFromRoleAsync(User user, string roleName)
@@ -177,13 +204,6 @@ namespace SchoolManagementSystem.Helpers
 
                 await _alertRepository.CreateAsync(alert);
             }
-        }
-
-        public async Task<IdentityResult> ResetPasswordWithoutTokenAsync(User user, string password)
-        {
-            // Update the password directly, creating a hash from the new password
-            user.Password = _userManager.PasswordHasher.HashPassword(user, password);
-            return await _userManager.UpdateAsync(user);
         }
 
         public async Task<string> GetRoleAsync(User user)
@@ -235,7 +255,5 @@ namespace SchoolManagementSystem.Helpers
 
             return await _employeeRepository.GetEmployeeByUserIdAsync(user.Id.ToString());
         }
-
-
     }
 }

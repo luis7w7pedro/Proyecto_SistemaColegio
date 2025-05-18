@@ -37,12 +37,14 @@ namespace SchoolManagementSystem.Models
         // ID for the teacher's profile picture
         public Guid ImageId { get; set; }
 
+        public string ImagePath { get; set; } // <-- Agrega esta propiedad
+
+        public string ImageFullPath => string.IsNullOrEmpty(ImagePath)
+            ? "/images/noimage.png"
+            : "/" + ImagePath.Replace("\\", "/");
+
         [Display(Name = "Image")]
         public IFormFile? ImageFile { get; set; }
-
-        public string ImageFullPath => ImageId == Guid.Empty
-            ? "https://devartacademyfiles.blob.core.windows.net/images/noimage.png"
-            : $"https://devartacademyfiles.blob.core.windows.net/teachers/{ImageId}";
 
         // Teacher's status
         public TeacherStatus Status { get; set; } = TeacherStatus.Active;

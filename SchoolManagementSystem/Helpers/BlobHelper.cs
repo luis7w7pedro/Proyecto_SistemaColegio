@@ -1,50 +1,52 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Blob;
-using System;
-using System.IO;
-using System.Threading.Tasks;
+﻿//using Microsoft.AspNetCore.Http;
+//using Microsoft.Extensions.Configuration;
+//using Microsoft.WindowsAzure.Storage;
+//using Microsoft.WindowsAzure.Storage.Blob;
+//using System;
+//using System.IO;
+//using System.Threading.Tasks;
 
-namespace SchoolManagementSystem.Helpers
-{
-    public class BlobHelper : IBlobHelper
-    {
-        private readonly CloudBlobClient _blobClient;
+//namespace SchoolManagementSystem.Helpers
+//{
+//    public class BlobHelper : IBlobHelper
+//    {
+//        private readonly CloudStorageAccount _storageAccount;
+//        private readonly CloudBlobClient _blobClient;
 
-        public BlobHelper(IConfiguration configuration)
-        {
-            // Connect to Azure Blob Storage
-            string keys = configuration["Blob:ConnectionStrings"];
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(keys);
-            _blobClient = storageAccount.CreateCloudBlobClient();
-        }
+//        public BlobHelper(IConfiguration configuration)
+//        {
+//            var keys = configuration["BlobConnectionString"];
+//            if (string.IsNullOrEmpty(keys))
+//                throw new InvalidOperationException("La cadena de conexión de Azure Blob Storage no está configurada. Agrega 'BlobConnectionString' en appsettings.json.");
+//            _storageAccount = CloudStorageAccount.Parse(keys);
+//            _blobClient = _storageAccount.CreateCloudBlobClient();
+//        }
 
-        public async Task<Guid> UploadBlobAsync(IFormFile file, string containerName)
-        {
-            Stream stream = file.OpenReadStream();
-            return await UploadStreamAsync(stream, containerName);
-        }
+//        public async Task<Guid> UploadBlobAsync(IFormFile file, string containerName)
+//        {
+//            Stream stream = file.OpenReadStream();
+//            return await UploadStreamAsync(stream, containerName);
+//        }
 
-        public async Task<Guid> UploadBlobAsync(byte[] file, string containerName)
-        {
-            MemoryStream stream = new MemoryStream(file);
-            return await UploadStreamAsync(stream, containerName);
-        }
+//        public async Task<Guid> UploadBlobAsync(byte[] file, string containerName)
+//        {
+//            MemoryStream stream = new MemoryStream(file);
+//            return await UploadStreamAsync(stream, containerName);
+//        }
 
-        public async Task<Guid> UploadBlobAsync(string image, string containerName)
-        {
-            Stream stream = File.OpenRead(image);
-            return await UploadStreamAsync(stream, containerName);
-        }
+//        public async Task<Guid> UploadBlobAsync(string image, string containerName)
+//        {
+//            Stream stream = File.OpenRead(image);
+//            return await UploadStreamAsync(stream, containerName);
+//        }
 
-        private async Task<Guid> UploadStreamAsync(Stream stream, string containerName)
-        {
-            Guid name = Guid.NewGuid();
-            CloudBlobContainer container = _blobClient.GetContainerReference(containerName);
-            CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{name}");
-            await blockBlob.UploadFromStreamAsync(stream);
-            return name;
-        }
-    }
-}
+//        private async Task<Guid> UploadStreamAsync(Stream stream, string containerName)
+//        {
+//            Guid name = Guid.NewGuid();
+//            CloudBlobContainer container = _blobClient.GetContainerReference(containerName);
+//            CloudBlockBlob blockBlob = container.GetBlockBlobReference($"{name}");
+//            await blockBlob.UploadFromStreamAsync(stream);
+//            return name;
+//        }
+//    }
+//}

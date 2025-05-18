@@ -26,6 +26,12 @@ namespace SchoolManagementSystem.Models
 
         public Guid ImageId { get; set; }
 
+        public string ImagePath { get; set; } // editable
+
+        public string ImageFullPath => string.IsNullOrEmpty(ImagePath)
+            ? "/images/noimage.png"
+            : "/" + ImagePath.Replace("\\", "/");
+
         [Display(Name = "Image")]
         public IFormFile? ImageFile { get; set; }
 
@@ -34,10 +40,6 @@ namespace SchoolManagementSystem.Models
         public StudentStatus Status { get; set; }
 
         public IEnumerable<User>? PendingUsers { get; set; } 
-
-        public string ImageFullPath => ImageId == Guid.Empty
-    ? "https://devartacademyfiles.blob.core.windows.net/images/student.png"
-    : $"https://devartacademyfiles.blob.core.windows.net/students/{ImageId}";
 
         public SchoolClass? SchoolClass { get; set; } 
     }

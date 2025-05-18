@@ -17,22 +17,25 @@ namespace SchoolManagementSystem.Controllers
     public class StudentsController : Controller
     {
         private readonly IStudentRepository _studentRepository;
-        private readonly IBlobHelper _blobHelper;
+        //private readonly IBlobHelper _blobHelper;
         private readonly IConverterHelper _converterHelper;
         private readonly ISchoolClassRepository _schoolClassRepository;
         private readonly IUserHelper _userHelper;
         private readonly ILogger<StudentsController> _logger; // Inject ILogger
+        private readonly LocalFileHelper _localFileHelper; // Inject LocalFileHelper
 
         public StudentsController(
             IStudentRepository studentRepository,
-            IBlobHelper blobHelper,
+            LocalFileHelper localFileHelper,
+            //IBlobHelper blobHelper,
             IConverterHelper converterHelper,
             ISchoolClassRepository schoolClassRepository,
             IUserHelper userHelper,
             ILogger<StudentsController> logger) // Inject ILogger
         {
             _studentRepository = studentRepository;
-            _blobHelper = blobHelper;
+            _localFileHelper = localFileHelper; // Assign the LocalFileHelper to the local field
+            //_blobHelper = blobHelper;
             _converterHelper = converterHelper;
             _schoolClassRepository = schoolClassRepository;
             _userHelper = userHelper;
@@ -102,7 +105,8 @@ namespace SchoolManagementSystem.Controllers
                     Guid imageId = Guid.Empty;
                     if (model.ImageFile != null && model.ImageFile.Length > 0)
                     {
-                        imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "students");
+                        var relativePath = await _localFileHelper.SaveFileAsync(model.ImageFile, "students");
+                        model.ImagePath = relativePath;
                     }
 
                     var student = await _converterHelper.ToStudentAsync(model, imageId, true);
@@ -180,7 +184,7 @@ namespace SchoolManagementSystem.Controllers
                     // Checks if a new image has been loaded
                     if (model.ImageFile != null && model.ImageFile.Length > 0)
                     {
-                        imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "students");
+                        model.ImagePath = await _localFileHelper.SaveFileAsync(model.ImageFile, "students");
                     }
 
                     // Convert to Student entity

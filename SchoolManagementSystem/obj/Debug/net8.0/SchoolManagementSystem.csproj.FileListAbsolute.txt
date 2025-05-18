@@ -611,12 +611,6 @@ C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolMa
 C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\staticwebassets\msbuild.SchoolManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\staticwebassets\msbuild.SchoolManagementSystem.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\staticwebassets\msbuild.build.SchoolManagementSystem.props
-C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SchoolManagementSystem.props
-C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SchoolManagementSystem.props
-C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\SchoolMa.D9F7BBC0.Up2Date
 C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\SchoolManagementSystem.dll
@@ -624,3 +618,4 @@ C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolMa
 C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\SchoolManagementSystem.pdb
 C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\SchoolManagementSystem.genruntimeconfig.cache
 C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\ref\SchoolManagementSystem.dll
+C:\Users\luis_\Documents\GitHub\Sistema_Colegio\Proyecto_SistemaColegio\SchoolManagementSystem\obj\Debug\net8.0\staticwebassets.build.json.cache

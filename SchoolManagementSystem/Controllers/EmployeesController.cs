@@ -17,23 +17,26 @@ namespace SchoolManagementSystem.Controllers
     public class EmployeesController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
-        private readonly IBlobHelper _blobHelper;
+        // private readonly IBlobHelper _blobHelper;
         private readonly IConverterHelper _converterHelper;
         private readonly IUserHelper _userHelper;
         private readonly ILogger<EmployeesController> _logger;
+        private readonly LocalFileHelper _localFileHelper;
 
         public EmployeesController(
             IEmployeeRepository employeeRepository,
-            IBlobHelper blobHelper,
+            // IBlobHelper blobHelper,
             IConverterHelper converterHelper,
             IUserHelper userHelper,
-            ILogger<EmployeesController> logger)
+            ILogger<EmployeesController> logger,
+            LocalFileHelper localFileHelper)
         {
             _employeeRepository = employeeRepository;
-            _blobHelper = blobHelper;
+            // _blobHelper = blobHelper;
             _converterHelper = converterHelper;
             _userHelper = userHelper;
             _logger = logger;
+            _localFileHelper = localFileHelper;
         }
 
         // GET: Employees
@@ -82,19 +85,15 @@ namespace SchoolManagementSystem.Controllers
                 {
                     Guid imageId = Guid.Empty;
 
-                    
                     if (model.ImageFile != null && model.ImageFile.Length > 0)
                     {
-                        imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "employees");
+                        model.ImagePath = await _localFileHelper.SaveFileAsync(model.ImageFile, "employees");
                     }
 
-                    
                     var employee = await _converterHelper.ToEmployeeAsync(model, imageId, true);
 
-                   
                     await _employeeRepository.CreateAsync(employee);
 
-     
                     var user = await _userHelper.GetUserByIdAsync(model.UserId);
                     await _userHelper.RemoveUserFromRoleAsync(user, "Pending");
                     await _userHelper.AddUserToRoleAsync(user, "Employee");
@@ -138,12 +137,11 @@ namespace SchoolManagementSystem.Controllers
             {
                 try
                 {
-                    Guid imageId = model.ImageId; 
+                    Guid imageId = model.ImageId;
 
- 
                     if (model.ImageFile != null && model.ImageFile.Length > 0)
                     {
-                        imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "employees");
+                        model.ImagePath = await _localFileHelper.SaveFileAsync(model.ImageFile, "employees");
                     }
 
                     var employee = await _converterHelper.ToEmployeeAsync(model, imageId, false);

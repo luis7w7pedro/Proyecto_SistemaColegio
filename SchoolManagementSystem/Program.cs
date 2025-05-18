@@ -30,35 +30,35 @@ namespace SchoolManagementSystem
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             // Identity
-            builder.Services.AddIdentity<User, IdentityRole>(cfg =>
-            {
-                cfg.Tokens.AuthenticatorTokenProvider = TokenOptions.DefaultAuthenticatorProvider;
-                cfg.SignIn.RequireConfirmedEmail = true;
-                cfg.User.RequireUniqueEmail = true;
-                cfg.Password.RequireDigit = false;
-                cfg.Password.RequiredUniqueChars = 0;
-                cfg.Password.RequireUppercase = false;
-                cfg.Password.RequireLowercase = false;
-                cfg.Password.RequireNonAlphanumeric = false;
-                cfg.Password.RequiredLength = 6;
-            })
-            .AddDefaultTokenProviders()
-            .AddEntityFrameworkStores<SchoolDbContext>();
+            builder.Services.AddIdentity<User, IdentityRole>()
+                .AddEntityFrameworkStores<SchoolDbContext>()
+                .AddDefaultTokenProviders();
 
             // Authentication
-            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddCookie()
-                .AddJwtBearer(cfg =>
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            })
+            .AddCookie(options =>
+            {
+                options.LoginPath = "/Account/Login";
+                options.LogoutPath = "/Account/Logout";
+                options.AccessDeniedPath = "/Account/AccessDenied";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
+                options.SlidingExpiration = true;
+            })
+            .AddJwtBearer(cfg =>
+            {
+                cfg.TokenValidationParameters = new TokenValidationParameters
                 {
-                    cfg.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidIssuer = builder.Configuration["Tokens:Issuer"],
-                        ValidAudience = builder.Configuration["Tokens:Audience"],
-                        IssuerSigningKey = new SymmetricSecurityKey(
-                            Encoding.UTF8.GetBytes(builder.Configuration["Tokens:Key"]))
-                    };
-                });
-
+                    ValidIssuer = builder.Configuration["Tokens:Issuer"],
+                    ValidAudience = builder.Configuration["Tokens:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(builder.Configuration["Tokens:Key"]))
+                };
+            });
 
             // Repositories
             builder.Services.AddScoped<IAlertRepository, AlertRepository>();
@@ -72,16 +72,18 @@ namespace SchoolManagementSystem
             builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
             builder.Services.AddScoped<IAttendanceRepository, AttendanceRepository>();
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            builder.Services.AddScoped<LocalFileHelper>();
 
             // Helpers
             builder.Services.AddScoped<IUserHelper, UserHelper>();
             builder.Services.AddTransient<IMailHelper, MailHelper>();
-            builder.Services.AddScoped<IBlobHelper, BlobHelper>();
+            //builder.Services.AddScoped<IBlobHelper, BlobHelper>();
             builder.Services.AddScoped<IConverterHelper, ConverterHelper>();
 
             // Seed data
             builder.Services.AddTransient<SeedDb>();
 
+            
             var app = builder.Build();
 
             // Syncfusion License
@@ -121,10 +123,12 @@ namespace SchoolManagementSystem
             app.UseAuthorization();
 
             app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+            name: "default",
+            pattern: "{controller=Account}/{action=Login}/{id?}");
+
 
             app.Run();
         }
     }
 }
+

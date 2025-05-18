@@ -1,17 +1,18 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Azure;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using SchoolManagementSystem.Data.Entities;
 using SchoolManagementSystem.Helpers;
 using SchoolManagementSystem.Models;
-using SchoolManagementSystem.Data.Entities;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using Azure;
 
 namespace SchoolManagementSystem.Controllers
 {
@@ -76,11 +77,10 @@ namespace SchoolManagementSystem.Controllers
         }
 
 
-
         // Logs out the user
         public async Task<IActionResult> Logout()
         {
-            await _userHelper.LogoutAsync();
+            await _userHelper.LogoutAsync(HttpContext);
             return RedirectToAction("Index", "Home");
         }
 
@@ -264,6 +264,15 @@ namespace SchoolManagementSystem.Controllers
             };
 
             return View(model);
+        }
+
+        //[Authorize]
+        public IActionResult TestAuth()
+        {
+            var isAuthenticated = User.Identity.IsAuthenticated;
+            var roles = User.Claims.Where(c => c.Type == ClaimTypes.Role).Select(c => c.Value).ToList();
+            var name = User.Identity.Name;
+            return Content($"Autenticado: {isAuthenticated}, Name: {name}, Roles: {string.Join(",", roles)}");
         }
 
         // Processes the Change First Password request

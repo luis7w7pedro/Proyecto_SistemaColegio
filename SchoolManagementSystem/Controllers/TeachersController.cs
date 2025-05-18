@@ -18,7 +18,7 @@ namespace SchoolManagementSystem.Controllers
         private readonly ITeacherRepository _teacherRepository;
         private readonly ISubjectRepository _subjectRepository;
         private readonly ISchoolClassRepository _schoolClassRepository;
-        private readonly IBlobHelper _blobHelper;
+        private readonly LocalFileHelper _localFileHelper;
         private readonly IConverterHelper _converterHelper;
         private readonly IUserHelper _userHelper; // Added to get pending users
         private readonly ILogger<TeachersController> _logger;
@@ -27,7 +27,7 @@ namespace SchoolManagementSystem.Controllers
             ITeacherRepository teacherRepository,
             ISubjectRepository subjectRepository,
             ISchoolClassRepository schoolClassRepository,
-            IBlobHelper blobHelper,
+            LocalFileHelper localFileHelper, // <-- Agrega este parámetro
             IConverterHelper converterHelper,
             IUserHelper userHelper, 
             ILogger<TeachersController> logger)
@@ -35,7 +35,7 @@ namespace SchoolManagementSystem.Controllers
             _teacherRepository = teacherRepository;
             _subjectRepository = subjectRepository;
             _schoolClassRepository = schoolClassRepository;
-            _blobHelper = blobHelper;
+            _localFileHelper = localFileHelper; // <-- Asigna aquí
             _converterHelper = converterHelper;
             _userHelper = userHelper; 
             _logger = logger;
@@ -105,7 +105,7 @@ namespace SchoolManagementSystem.Controllers
                 // Check if an image has been loaded
                 if (model.ImageFile != null && model.ImageFile.Length > 0)
                 {
-                    imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "teachers");
+                    model.ImagePath = await _localFileHelper.SaveFileAsync(model.ImageFile, "teachers");
                 }
 
                 var teacher = await _converterHelper.ToTeacherAsync(model, imageId, true);
@@ -169,7 +169,7 @@ namespace SchoolManagementSystem.Controllers
                     // Checks if a new image has been loaded
                     if (model.ImageFile != null && model.ImageFile.Length > 0)
                     {
-                        imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "teachers");
+                        model.ImagePath = await _localFileHelper.SaveFileAsync(model.ImageFile, "teachers");
                     }
 
                     // Converts the ViewModel to the Teacher entity

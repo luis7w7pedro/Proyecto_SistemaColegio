@@ -47,8 +47,10 @@ namespace SchoolManagementSystem.Models
         public Guid ImageId { get; set; }
 
         // Full path of the image
-        public string ImageFullPath => ImageId == Guid.Empty
-            ? "https://devartacademyfiles.blob.core.windows.net/images/noimage.png"
-            : $"https://devartacademyfiles.blob.core.windows.net/employees/{ImageId}";
+        public string ImageFullPath => string.IsNullOrEmpty(ImagePath)
+            ? "/images/noimage.png"
+            : "/" + ImagePath.Replace("\\", "/");
+
+        public string ImagePath { get; set; }
     }
 }
